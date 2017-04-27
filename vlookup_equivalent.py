@@ -11,5 +11,7 @@ def run_main():
     df['columnACheck'] = [df.columnA.iloc[df[df.participantIds == idToCheck].index[0]] for idToCheck in df.idsToCheck.tolist()]
     df['columnBCheck'] = [df.columnB.iloc[df[df.participantIds == idToCheck].index[0]] for idToCheck in df.idsToCheck.tolist()]
 
+    print(df)
+
 if __name__ == '__man__':
     run_main()
